@@ -996,52 +996,6 @@ export default function App() {
                 )}
               </div>
 
-            {/* Platform Guides Card */}
-            <div className="bg-slate-900 rounded-2xl p-5 md:p-6 border border-slate-800 shadow-xl space-y-4">
-              <h3 className="font-semibold text-white text-sm flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-amber-400" />
-                Panduan Optimasi Trafik Instant
-              </h3>
-
-              <div className="space-y-3 text-xs leading-relaxed text-slate-400">
-                <div className="p-3.5 bg-slate-950/50 rounded-xl space-y-1 border border-slate-850/60">
-                  <div className="text-slate-350 text-slate-300 font-semibold flex items-center gap-1.5">
-                    <span className="text-emerald-400">✦</span> Jeda dan Struktur (Pacing)
-                  </div>
-                  <p className="text-[11px]">
-                    Gunakan integrasi <strong>Burst Kunjungan (multiple requests)</strong> dengan <strong>Pacing Berjeda</strong> agar hit analytics membaca visitor datang secara sekuensial yang normal, bukan lonjakan anomali bot.
-                  </p>
-                </div>
-
-                <div className="p-3.5 bg-slate-950/50 rounded-xl space-y-1 border border-slate-850/60">
-                  <div className="text-slate-350 text-slate-300 font-semibold flex items-center gap-1.5">
-                    <span className="text-emerald-400">✦</span> Penyamaran URL Referrer
-                  </div>
-                  <p className="text-[11px]">
-                    Dengan referral spoofing Google Search, web analytics seperti Google Analytics akan mencatat kunjungan bertipe <em>Organic Search</em> yang meningkatkan reputasi SEO secara instan.
-                  </p>
-                </div>
-
-                <div className="p-3.5 bg-slate-950/50 rounded-xl space-y-1 border border-slate-850/60">
-                  <div className="text-slate-350 text-slate-300 font-semibold flex items-center gap-1.5">
-                    <span className="text-emerald-400">✦</span> Penyamaran IP Publik Acak
-                  </div>
-                  <p className="text-[11px]">
-                    Setiap request dilengkapi dengan header forwarder IP publik acak dari berbagai provider internasional (menghindari subblok privat). Ini memastikan sistem web analytics mengenali hits sebagai pengunjung dari berbagai belahan dunia secara organik.
-                  </p>
-                </div>
-
-                <div className="p-3.5 bg-slate-950/50 rounded-xl space-y-1 border border-slate-850/60">
-                  <div className="text-slate-350 text-slate-300 font-semibold flex items-center gap-1.5">
-                    <span className="text-emerald-400">✦</span> Berjalan Seutuhnya di Latar Belakang
-                  </div>
-                  <p className="text-[11px]">
-                    Server scheduler Express berjalan mandiri piringan awan Cloud Run. Anda dapat menutup tab browser ini, mematikan komputer, dan trafik akan tetap terus mengalir tanpa henti.
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Universal Auto-Clicker Script Block */}
             <div className="bg-[#10192b] rounded-2xl p-5 md:p-6 border border-amber-500/20 shadow-2xl space-y-3.5">
               <h3 className="font-semibold text-amber-400 text-sm flex items-center gap-2">
